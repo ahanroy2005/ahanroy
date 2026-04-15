@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Didot', serif;
+    background-color: #f8f6f2;
+    color: #111;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: white;
+}
+
+.logo img {
+    height: 80px;   
+    width: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid black;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 400px;
+}
+
+.image-box {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section {
+    padding: 80px 60px;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: #f8f6f2;
+    border: 1px solid #eaeaea;
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background: #111;
+    color: #fff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.skill-category {
+    background: white;
+    padding: 30px;
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 300px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+form input, form textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+}
