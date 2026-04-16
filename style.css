@@ -99,7 +99,7 @@ nav {
 }
 
 .academics-container {
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .card {
@@ -204,10 +204,44 @@ nav {
 
 .skill-category {
     background: white;
-    padding: 30px;
+    padding: 0;
     border: 1px solid #eaeaea;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
+
+.skill-category-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.skill-category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.skill-category:hover .skill-category-img {
+    transform: scale(1.05);
+}
+
+.skill-category h3,
+.skill-tags {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.skill-category h3 {
+    padding-top: 25px;
+}
+
+.skill-tags {
+    padding-bottom: 25px;
+}
+
 
 .skill-category:hover {
     transform: translateY(-5px);
